@@ -6,6 +6,10 @@
         ".devcontainer"
     ],
     "cSpell.words": [
+        "astrojs",
+        "biomejs",
         "elementrix"
-    ]
+    ],
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
 }

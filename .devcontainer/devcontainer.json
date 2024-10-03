@@ -14,7 +14,8 @@
 				"unifiedjs.vscode-mdx",
 				"eliostruyf.vscode-typescript-exportallmodules",
 				"yzhang.markdown-all-in-one",
-				"biomejs.biome"
+				"biomejs.biome",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	}

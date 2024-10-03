@@ -8,6 +8,7 @@
         "eliostruyf.vscode-typescript-exportallmodules",
         "yzhang.markdown-all-in-one",
         "biomejs.biome",
-        "usernamehw.errorlens"
+        "usernamehw.errorlens",
+        "streetsidesoftware.code-spell-checker"
     ]
 }

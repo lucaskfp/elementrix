@@ -1,0 +1,20 @@
+{
+  "name": "elementrix-repo",
+  "version": "1.0.0",
+  "license": "ISC",
+  "private": true,
+
+  "workspaces": ["packages/*", "apps/*"],
+
+  "scripts": {
+    "build:elementrix" : "npm run build -w elementrix",
+    "build:docs": "npm run build -w docs",
+    "dev:elementrix": "npm run dev -w elementrix",
+    "dev:docs": "npm run dev -w docs"
+  },
+
+  "volta": {
+    "node": "20.17.0",
+    "npm": "10.8.2"
+  }
+}

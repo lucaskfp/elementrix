@@ -29,6 +29,7 @@
     "lit": "^3.2.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.3",
     "lit-analyzer": "^2.0.3",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",

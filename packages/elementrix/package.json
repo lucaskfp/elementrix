@@ -5,21 +5,17 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/elementrix/index.js",
-  "module": "./dist/elementrix/index.js",
-  "types": "./dist/elementrix/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/elementrix/index.js",
-      "types": "./dist/elementrix/index.d.ts"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./accordion": {
-      "import": "./dist/elementrix/accordion/index.js",
-      "types": "./dist/elementrix/accordion/index.d.ts"
-    },
-    "./react": {
-      "import": "./dist/elementrix/react/index.js",
-      "types": "./dist/elementrix/types/index.d.ts"
+      "import": "./dist/accordion/index.js",
+      "types": "./dist/accordion/index.d.ts"
     }
   },
   "scripts": {
@@ -37,5 +33,15 @@
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
     "vite-plugin-dts": "^4.2.3"
+  },
+  "keywords": [
+    "elementrix",
+    "web-components",
+    "lit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucaskfp/elementrix.git",
+    "directory": "https://github.com/lucaskfp/elementrix"
   }
 }

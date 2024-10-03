@@ -3,39 +3,27 @@ import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 
 export default defineConfig({
-// 	plugins: [
-//         dts({
-// 		entryRoot: "src/lib",
-// 		insertTypesEntry: true,
-// 		outDir: "dist/elementrix/types",
-// 		rollupTypes: true,
-// 	})
-// ],
+	plugins: [
+		dts()
+	],
 	server: {
 		host: "127.0.0.1",
 	},
 	build: {
 		lib: {
 			entry: [
-				resolve(__dirname, "src/lib/components/index.ts"),
-                resolve(__dirname, "src/lib/components/accordion/index.ts"),
-				resolve(__dirname, "src/lib/react/index.ts"),
+				resolve(__dirname, "src/lib/index.ts"),
+				resolve(__dirname, "src/lib/**/index.ts")
 			],
 			name: "elementrix",
-			 formats: ["es"],
+			formats: ["es"],
 		},
 		rollupOptions: {
-			// external: ["react", "react-dom"],
 			input: {
-				"elementrix/index": resolve(__dirname, "src/lib/components/index.ts"),
-				"elementrix/accordion/index": resolve(__dirname, "src/lib/components/accordion/index.ts"),
-				"elementrix/react/index": resolve(__dirname, "src/lib/react/index.ts"),
+				"index": resolve(__dirname, "src/lib/index.ts"),
+				"accordion/index": resolve(__dirname, "src/lib/accordion/index.ts")
 			},
 			output: {
-				// globals: {
-				// 	react: "React",
-				// 	"react-dom": "ReactDOM",
-				// },
 				entryFileNames: (chunkInfo) => "[name].js",
 			},
 		},

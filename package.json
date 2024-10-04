@@ -5,10 +5,10 @@
 	"private": true,
 	"workspaces": ["packages/*", "apps/*"],
 	"scripts": {
-		"build:elementrix": "npm run build -w elementrix",
-		"build:docs": "npm run build -w docs",
 		"dev:elementrix": "npm run dev -w elementrix",
 		"dev:docs": "npm run dev -w docs",
+		"build:elementrix": "npm run build -w elementrix",
+		"build:docs": "npm run build -w docs",
 		"lint:elementrix": "npx -w elementrix biome lint --write ./src",
 		"lint:docs": "npx -w docs biome lint --write ./src",
 		"format:elementrix": "npx -w elementrix biome format --write ./src"

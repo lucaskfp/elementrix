@@ -1,16 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Lit + TS</title>
-    <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.ts"></script>
-  </head>
-  <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + Lit + TS</title>
+  <script type="module" src="/src/lib/accordion/index.ts"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="dark:bg-slate-700 dark:text-white min-h-screen flex justify-center items-center">
+  <et-accordion class="w-full max-w-2xl flex flex-col gap-2">
+    <et-accordion-item class="dark:bg-slate-800 rounded-lg overflow-hidden group" open>
+      <et-accordion-item-header class="p-3 hover:bg-slate-900 group-open:bg-slate-900 transition-all"
+        aria-controls="sect1">
+        <span class="group-open:hidden">+</span>
+        <span class="hidden group-open:inline-block">-</span>
+        <span>Header</span>
+      </et-accordion-item-header>
+
+      <et-accordion-item-panel class="py-2 pl-3">content</et-accordion-item-panel>
+    </et-accordion-item>
+
+    <et-accordion-item class="dark:bg-slate-800 rounded-lg overflow-hidden group">
+      <et-accordion-item-header class="p-3 hover:bg-slate-900 group-open:bg-slate-900 transition-all"
+        aria-controls="sect1">
+        <span class="group-open:hidden">+</span>
+        <span class="hidden group-open:inline-block">-</span>
+        <span>Header</span>
+      </et-accordion-item-header>
+
+      <et-accordion-item-panel class="py-2 pl-3">content</et-accordion-item-panel>
+    </et-accordion-item>
+  </et-accordion>
+</body>
+
 </html>

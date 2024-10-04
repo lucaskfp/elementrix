@@ -1,15 +1,15 @@
 {
-    "cSpell.ignorePaths": [
-        "package-lock.json",
-        "node_modules",
-        ".vscode",
-        ".devcontainer"
-    ],
-    "cSpell.words": [
-        "astrojs",
-        "biomejs",
-        "elementrix"
-    ],
-    "editor.defaultFormatter": "biomejs.biome",
-    "editor.formatOnSave": true,
+	"cSpell.ignorePaths": [
+		"package-lock.json",
+		"node_modules",
+		".vscode",
+		".devcontainer"
+	],
+	"cSpell.words": ["astro", "astrojs", "biomejs", "elementrix"],
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.formatOnSave": true,
+	"editor.linkedEditing": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	}
 }

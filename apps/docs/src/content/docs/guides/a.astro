@@ -1,0 +1,56 @@
+---
+import { Code } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+export const exampleCode = `
+import "elementrix/accordion";
+
+<et-accordion>
+    <et-accordion-item open>
+        <et-accordion-item-header>
+            Header
+        </et-accordion-item-header>
+
+        <et-accordion-item-panel>
+            Content
+        </et-accordion-item-panel>
+    </et-accordion-item>    
+</et-accordion>
+`;
+
+---
+
+<script>
+import "elementrix/accordion";
+</script>
+
+
+
+
+  <Tabs>
+    <TabItem label="Preview">
+        <div class="[&_article.card]:p-4 [&_article.card]:bg-[var(--ec-frm-edBg)] [&_article.card_p]:hidden">
+        <Card title='preview'>
+
+    <et-accordion class="w-full max-w-2xl flex flex-col gap-2">
+        <et-accordion-item class="rounded-lg overflow-hidden group bg-gray-700" open>
+            <et-accordion-item-header class="p-3 hover:dark:bg-red-600 group-open:dark:bg-gray-900 transition-all cursor-pointer">
+                    <span class="group-open:hidden">+</span>
+                    <span class="hidden group-open:inline-block">-</span>
+                    <span>Header</span>
+                </et-accordion-item-header>
+                
+                <et-accordion-item-panel class="py-2 pl-3 !m-0">content</et-accordion-item-panel>
+            </et-accordion-item>
+            
+            
+        </et-accordion>
+    </Card>
+    </div>
+</TabItem>
+    <TabItem label="Source">
+<Code code={exampleCode} lang="js"   />
+
+    </TabItem>
+  </Tabs>

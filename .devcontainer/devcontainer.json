@@ -9,14 +9,14 @@
 			"extensions": [
 				"astro-build.astro-vscode",
 				"formulahendry.auto-close-tag",
-				"formulahendry.auto-rename-tag",
 				"ms-vscode-remote.remote-containers",
 				"unifiedjs.vscode-mdx",
 				"eliostruyf.vscode-typescript-exportallmodules",
 				"yzhang.markdown-all-in-one",
 				"biomejs.biome",
 				"streetsidesoftware.code-spell-checker",
-				"christian-kohler.path-intellisense"
+				"christian-kohler.path-intellisense",
+				"bradlc.vscode-tailwindcss"
 			]
 		}
 	}

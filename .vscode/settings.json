@@ -5,11 +5,14 @@
 		".vscode",
 		".devcontainer"
 	],
-	"cSpell.words": ["astro", "astrojs", "biomejs", "elementrix"],
+	"cSpell.words": ["astro", "astrojs", "biomejs", "elementrix", "tailwindcss"],
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.formatOnSave": true,
 	"editor.linkedEditing": true,
 	"[html]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
 	}
 }
